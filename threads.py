@@ -7,7 +7,7 @@ def calc():
     for i in range(0, 4000000):
         math.sqrt(i)
 
-def thread_func():
+def main():
     threads = []
 
     for i in range(os.cpu_count()):
@@ -21,4 +21,4 @@ def thread_func():
         thread.join()
 
 if __name__ == '__main__':
-    thread_func()
+    main()

@@ -7,7 +7,7 @@ def calc():
     for i in range(0, 70000000):
         math.sqrt(i)
 
-def process_func():
+def main():
     processes = []
 
     for i in range(os.cpu_count()):
@@ -21,4 +21,4 @@ def process_func():
         process.join()
 
 if __name__ == '__main__':
-    process_func()
+    main()
